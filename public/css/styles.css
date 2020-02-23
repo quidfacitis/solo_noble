@@ -1,0 +1,96 @@
+/* * {
+  font-size: 24px;
+} */
+
+h1, h2 {
+  text-align: center;
+}
+
+.board-container {
+  width: 88%;
+  margin: auto;
+  position: relative;
+}
+
+
+.how-to-play {
+  position: absolute;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 260px;
+  left: 0;
+  top: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.results {
+  position: absolute;
+  text-align: justify;
+  text-justify: inter-word;
+  width: 260px;
+  right: 0;
+  top: 0;
+}
+
+.selector-container {
+  width: fit-content;
+  margin: auto;
+}
+
+.triangle-selector, .english-selector, .european-selector {
+  display: inline-block;
+  margin: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+#triangle_row_1, #triangle_row_2, #triangle_row_3, #triangle_row_4,
+#triangle_row_5, #english_row_1, #english_row_2, #english_row_3,
+#english_row_4, #english_row_5, #english_row_6, #english_row_7,
+#european_row_1, #european_row_2, #european_row_3, #european_row_4,
+#european_row_5, #european_row_6, #european_row_7 {
+  margin: 0 auto;
+  font-size: 60px;
+  border-collapse: collapse;
+}
+
+th {
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+}
+
+#triangle-container {
+  display: block;
+}
+
+#english-container {
+  width: fit-content;;
+  margin: auto;
+  display: none;
+}
+
+#european-container {
+  width: fit-content;
+  margin: auto;
+  display: none;
+}
+
+#black-triangle {
+  width: 28px;
+}
+
+#black-octagon, #english-cross {
+  width: 24px;
+}
+
+/* #2bff00  == bright green */
+.selected-circle {
+  color: #2bff00;
+  text-shadow: 0 0 8px #000;
+}
