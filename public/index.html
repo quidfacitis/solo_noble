@@ -11,21 +11,28 @@
 
 <body>
   <h1>Solo Noble</h1>
-  <div class="selector-container">
-    <div class="triangle-selector" id="triangle-selector">
-      <img id="black-triangle" src="../img/black_triangle.png"/>
-      <p>Triangle</p>
+    <div class="header-container">
+      <div class="reload">
+        <img id="reload-img" src="../img/reload.png"/>
+      </div>
+      <div class="selector-container">
+        <div class="triangle-selector" id="triangle-selector">
+          <img id="black-triangle" src="../img/black_triangle.png"/>
+          <p>Triangle</p>
+        </div>
+        <div class="english-selector" id="english-selector">
+          <img id="english-cross" src="../img/english_cross.png"/>
+          <p>English</p>
+        </div>
+        <div class="european-selector" id="european-selector">
+          <img id="black-octagon" src="../img/black_octagon_2.png"/>
+          <p>European</p>
+        </div>
+      </div>
+      <div class="shaker">
+        <img id="shaker-img" src="../img/shaker.jpg"/>
+      </div>
     </div>
-    <div class="english-selector" id="english-selector">
-      <img id="english-cross" src="../img/english_cross.png"/>
-      <p>English</p>
-    </div>
-    <div class="european-selector" id="european-selector">
-      <img id="black-octagon" src="../img/black_octagon_2.png"/>
-      <p>European</p>
-    </div>
-  </div>
-
 
   <div class="board-container">
 
@@ -220,6 +227,12 @@
         <li>Leave <b>three</b>: you're just plain dumb.</li>
         <li>Leave <b>four or more</b>: you're an "eg-no-ra-moose."</li>
       </ol>
+      <p class="dividing-paragraph"></p>
+      <br>
+      <ul class="reload-and-shaker-explanation">
+        <li><img id="reload-img-small" src="../img/reload.png"/> = New board.</li>
+        <li><img id="shaker-img-small" src="../img/resized-shaker.png"/> = Shake board for different starting "&#9675;."</li>
+      </ul>
     </div>
 
   </div>
@@ -228,6 +241,9 @@
   <script src="./js/english_logic.js"></script>
   <script src="./js/european_logic.js"></script>
   <script src="./js/triangle_logic.js"></script>
+  <script src="./js/new_board.js"></script>
+  <script src="./js/perform_jump.js"></script>
+  <script src="./js/shake_board.js"></script>
 
 </body>
 </html>
